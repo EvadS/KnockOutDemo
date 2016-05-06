@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace KnockOutDemo.Controllers
 {
-    public class Home : Controller
+    public class HomeController : Controller
     {
         //
-        // GET: /Home/
+        // GET: /HomeController/
 
         public ActionResult Index()
         {
