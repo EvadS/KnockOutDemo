@@ -9,17 +9,11 @@ namespace KnockOutDemo.Controllers
     public class HomeController : Controller
     {
         //
-        // GET: /HomeController/
+        // GET: /Home/
 
         public ActionResult Index()
         {
             return View();
-        }
-
-
-        public ActionResult Customers()
-        {  
-            return View();  
         }
 
     }
