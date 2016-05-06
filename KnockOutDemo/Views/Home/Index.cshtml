@@ -2,9 +2,20 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<script src="~/Scripts/knockout-3.4.0.js"></script>
+<script src="~/Scripts/CustomerViewModel.js"></script>
+
+<h2>Customers</h2>
+
+<div id="displayNode">
+    @Html.Partial("CustomerList")
+</div>
+<div id="createNode">
+    @Html.Partial("CreateCustomer")
+</div>
+
 
 
 @section Scripts {
-    @Scripts.Render("~/bundles/jquery")
+   
 }

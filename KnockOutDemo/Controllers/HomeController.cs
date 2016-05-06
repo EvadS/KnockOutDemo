@@ -16,5 +16,10 @@ namespace KnockOutDemo.Controllers
             return View();
         }
 
+        public ActionResult CustomerList()
+        {
+            return PartialView();
+        }
+
     }
 }

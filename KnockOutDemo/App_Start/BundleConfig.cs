@@ -31,6 +31,15 @@ namespace KnockOutDemo.App_Start
                 "~/Content/themes/base/jquery.ui.datepicker.css",
                 "~/Content/themes/base/jquery.ui.progressbar.css",
                 "~/Content/themes/base/jquery.ui.theme.css"));
+
+            #region  jquery on the CDN
+            //add link to jquery on the CDN
+            var jqueryCdnPath = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js";
+
+            bundles.Add(new ScriptBundle("~/bundles/jqueryCdn",
+                        jqueryCdnPath).Include(
+                        "~/Scripts/jquery-{version}.js"));
+            #endregion
         }
     }
 }
